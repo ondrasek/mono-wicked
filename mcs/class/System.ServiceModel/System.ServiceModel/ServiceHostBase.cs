@@ -601,6 +601,23 @@ namespace System.ServiceModel
 		{
 			Close ();
 		}
+
+    /*
+     * Dummy AddServiceEndpoints() based on
+     * https://github.com/mono/mono/blob/master/mcs/class/referencesource/System.ServiceModel/System/ServiceModel/ServiceHost.cs
+     */
+    public virtual System.Collections.ObjectModel.ReadOnlyCollection<System.ServiceModel.Description.ServiceEndpoint> AddDefaultEndpoints()
+    {
+      return new
+        System.Collections.ObjectModel.ReadOnlyCollection<System.ServiceModel.Description.ServiceEndpoint>(new
+            System.Collections.Generic.List<System.ServiceModel.Description.ServiceEndpoint>()); }
+
+    internal virtual void
+      AddDefaultEndpoints(System.ServiceModel.Channels.Binding
+          defaultBinding, System.Collections.Generic.List<System.ServiceModel.Description.ServiceEndpoint>
+          defaultEndpoints) {
+      // Does nothing.
+    }
 	}
 
 	/// <summary>
