@@ -17,9 +17,6 @@
 [submodule "external/ikdasm"]
 	path = external/ikdasm
 	url = git://github.com/mono/ikdasm.git
-[submodule "external/reference-assemblies"]
-	path = external/binary-reference-assemblies
-	url = git://github.com/mono/reference-assemblies.git
 [submodule "external/nunit-lite"]
 	path = external/nunit-lite
 	url = git://github.com/mono/NUnitLite.git
@@ -71,3 +68,6 @@
 [submodule "external/bdwgc"]
 	path = external/bdwgc
 	url = git://github.com/Unity-Technologies/bdwgc.git
+[submodule "external/binary-reference-assemblies"]
+	path = external/binary-reference-assemblies
+	url = git@github.com:ondrasek/mono-wicked-reference-assemblies.git
